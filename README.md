@@ -27,7 +27,6 @@ import IncrementalEntry._
 implicit val fixVersion = FixVersion.Fix50
 
 val msg = RichMarketDataIncrementalRefresh.newMessage
-msg.hasRequestId must_== false
 msg.requestId = "reqId"
 msg += IncrementalEntry[Fix50](MDUpdateAction.NEW, MDEntryType.BID)
 msg ++= List(IncrementalEntry[Fix50](MDUpdateAction.NEW, MDEntryType.OFFER), IncrementalEntry[Fix50](MDUpdateAction.CHANGE, MDEntryType.BID))
