@@ -1,0 +1,9 @@
+target/
+dist/
+.idea/
+*.iml
+*.swp
+*.un~
+.history
+about.properties
+logs/
